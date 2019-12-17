@@ -101,7 +101,7 @@ body {
     .home-template .post-feed,
     .tag-template .post-feed,
     .author-template .post-feed {
-        padding: 40px 0 5vw;
+        padding: 40px 0 0;
         border-top-left-radius: 3px;
         border-top-right-radius: 3px;
     }
@@ -2505,6 +2505,30 @@ Usage (In Ghost editor):
     letter-spacing: 0.2px;
 }
 
+@media (max-width: 800px) {
+    .site-title {
+        font-size: 4.8rem;
+    }
+    .author-header-content .author-bio {
+        font-size: 1.8rem;
+    }
+    .author-header-content .author-meta {
+        font-size: 1.2rem;
+    }
+    .site-description {
+        font-size: 1.8rem;
+    }
+}
+
+@media (max-width: 500px) {
+    .site-title {
+        font-size: 3.2rem;
+    }
+    .site-description {
+        font-size: 1.6rem;
+    }
+}
+
 .author-header-content .social-link:first-of-type {
     padding-left: 4px;
 }
@@ -2577,7 +2601,7 @@ Usage (In Ghost editor):
     }
 
     .author-header-content .author-bio {
-        font-size: 1.8rem;
+        font-size: 1.6rem;
         line-height: 1.3em;
         letter-spacing: 0;
     }
