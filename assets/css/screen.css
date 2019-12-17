@@ -2044,9 +2044,9 @@ Usage (In Ghost editor):
 }
 
 .read-next-card-header h3 {
-    margin: 0;
+    margin: 0 0 15px;
     color: rgba(255, 255, 255, 0.6);
-    font-size: 1.2rem;
+    font-size: 1.4rem;
     line-height: 1em;
     font-weight: 400;
     letter-spacing: 0.4px;
