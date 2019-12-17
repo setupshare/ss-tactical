@@ -548,7 +548,8 @@ The knock-on effect of this is ugly browser-scroll bars at the bottom, so 80px o
 
 .submit-setup-button:active,
 .submit-setup-button:focus {
-    background-color: rgba(255,255,255, 0.15);
+    background-color: color(var(--blue) l(-20%));
+    border-color: color(var(--blue) l(-20%));
 }
 
 .site-nav-right .nav + .subscribe-button {
