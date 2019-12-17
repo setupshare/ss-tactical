@@ -2500,10 +2500,9 @@ Usage (In Ghost editor):
     display: flex;
     align-items: center;
     margin: 0 0 0 1px;
-    font-size: 1.2rem;
+    font-size: 1.4rem;
     font-weight: 400;
     letter-spacing: 0.2px;
-    text-transform: uppercase;
 }
 
 .author-header-content .social-link:first-of-type {
@@ -3211,7 +3210,7 @@ Usage (In Ghost editor):
     }
 
     .no-image .author-social-link a {
-        color: rgba(255, 255, 255, 0.75);
+        color: var(--blue);
     }
 
     .post-full-content h1,
