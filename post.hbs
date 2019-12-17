@@ -11,10 +11,10 @@ into the {body} of the default.hbs template --}}
 {{#post}}
 
 <main id="site-main" class="site-main outer">
-    <div class="inner">
+    
 
         <article class="post-full {{post_class}} {{#unless feature_image}}no-image{{/unless}}">
-
+        <div class="inner">
             <header class="post-full-header">
 
                 {{#if primary_tag}}
@@ -31,8 +31,8 @@ into the {body} of the default.hbs template --}}
                 <p class="post-full-custom-excerpt">{{custom_excerpt}}</p>
                 {{/if}}
             </header>
-
             {{#if feature_image}}
+            </div>
             <figure class="post-full-image">
                 {{!-- This is a responsive image, it loads different sizes depending on device
                 https://medium.freecodecamp.org/a-guide-to-responsive-images-with-ready-to-use-templates-c400bd65c433 --}}
@@ -48,6 +48,7 @@ into the {body} of the default.hbs template --}}
                     alt="{{title}}"
                 />
             </figure>
+            <div class="inner">
             {{/if}}
 
             <section class="post-full-content">
@@ -118,7 +119,7 @@ into the {body} of the default.hbs template --}}
             <section class="post-full-comments">
                 If you want to embed comments, this is a good place to do it!
             </section>
-            
+            a
 
         </article>
 

@@ -13,8 +13,7 @@
     --darkgreybg: #111111;
     --darkborder: rgba(51,51,51,.75);
     --grey: #66696d;
-    --midgrey: #738a94;
-    --middarkgrey: #aaaaaa;
+    --midgrey: #aaaaaa;
     --lightgrey: #c5d2d9;
     --whitegrey: #ededed;
     --pink: #fa3a57;
@@ -422,7 +421,7 @@ blockquote cite a {
 }
 
 a {
-    color: color(var(--blue) l(-5%));
+    color: var(--blue);
     text-decoration: none;
 }
 
