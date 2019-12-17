@@ -1959,6 +1959,14 @@ Usage (In Ghost editor):
     border-radius: 6px;
 }
 
+@media (max-width: 800px) {
+    .post-full-comments {
+        margin: 0 -5vw;
+        border-radius: 0px;
+        max-width: none;
+    }
+}
+
 
 /* 7.4. Related posts
 /* ---------------------------------------------------------- */
