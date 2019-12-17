@@ -1019,7 +1019,7 @@ make sure this only happens on large viewports / desktop-ish devices.
 .post-full-content {
     position: relative;
     margin: 0 auto;
-    padding: 0 170px 6vw;
+    padding: 0 170px 3vw;
     min-height: 230px;
     font-size: 2.1rem;
     line-height: 1.4em;
@@ -1065,7 +1065,6 @@ make sure this only happens on large viewports / desktop-ish devices.
 .post-full-content dl,
 .post-full-content pre,
 .post-full-content blockquote,
-.post-full-comments,
 .footnotes {
     margin: 0 0 1.5em 0;
     min-width: 100%;
@@ -1076,7 +1075,6 @@ make sure this only happens on large viewports / desktop-ish devices.
     .post-full-content ol,
     .post-full-content dl,
     .post-full-content pre,
-    .post-full-comments,
     .footnotes {
         margin-bottom: 1.28em;
     }
@@ -1495,8 +1493,10 @@ Usage (In Ghost editor):
 .post-full-byline {
     display: flex;
     justify-content: space-between;
-    margin: 35px 0 0;
+    margin: 0 auto;
     padding-top: 15px;
+    padding-bottom:7vw;
+    max-width: 700px;
     border-top: 1px solid color(var(--lightgrey) l(+10%));
 }
 
@@ -1517,7 +1517,6 @@ Usage (In Ghost editor):
     font-size: 1.2rem;
     line-height: 1.2em;
     letter-spacing: 0.2px;
-    text-transform: uppercase;;
 }
 
 .post-full-byline-meta h4 {
@@ -1845,7 +1844,10 @@ Usage (In Ghost editor):
 
 .post-full-comments {
     margin: 0 auto;
-    max-width: 840px;
+    padding: 16px 32px;
+    max-width: 750px;
+    background-color: var(--darkgreybg);
+    border-radius: 8px;
 }
 
 
@@ -2997,7 +2999,7 @@ Usage (In Ghost editor):
 /* ---------------------------------------------------------- */
 @media (prefers-color-scheme: dark) {
     body {
-        color: var(--midgrey);
+        color: var(--lightgrey);
         background: var(--darkmode);
     }
 

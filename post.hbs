@@ -59,56 +59,55 @@ into the {body} of the default.hbs template --}}
 
             <div class="post-full-byline">
 
-                    <section class="post-full-byline-content">
+                <section class="post-full-byline-content">
 
-                        <ul class="author-list">
-                            {{#foreach authors}}
-                            <li class="author-list-item">
+                    <ul class="author-list">
+                        {{#foreach authors}}
+                        <li class="author-list-item">
 
-                                <div class="author-card">
-                                    {{#if profile_image}}
-                                    <img class="author-profile-image" src="{{img_url profile_image size="xs"}}" alt="{{name}}" />
-                                    {{else}}
-                                    <div class="author-profile-image">{{> "icons/avatar"}}</div>
-                                    {{/if}}
-                                    <div class="author-info">
-                                        {{#if bio}}
-                                        <div class="bio">
-                                            <h2>{{name}}</h2>
-                                            <p>{{bio}}</p>
-                                            <p><a href="{{url}}">More posts</a> by {{name}}.</p>
-                                        </div>
-                                        {{else}}
-                                        <h2>{{name}}</h2>
-                                        <p>Read <a href="{{url}}">more posts</a> by this author.</p>
-                                        {{/if}}
-                                    </div>
-                                </div>
-
+                            <div class="author-card">
                                 {{#if profile_image}}
-                                <a href="{{url}}" class="author-avatar">
-                                    <img class="author-profile-image" src="{{img_url profile_image size="xs"}}" alt="{{name}}" />
-                                </a>
+                                <img class="author-profile-image" src="{{img_url profile_image size="xs"}}" alt="{{name}}" />
                                 {{else}}
-                                <a href="{{url}}" class="author-avatar author-profile-image">{{> "icons/avatar"}}</a>
+                                <div class="author-profile-image">{{> "icons/avatar"}}</div>
                                 {{/if}}
-
-                            </li>
-                            {{/foreach}}
-                        </ul>
-
-                        <section class="post-full-byline-meta">
-                            <h4 class="author-name">{{authors}}</h4>
-                            <div class="byline-meta-content">
-                                <time class="byline-meta-date" datetime="{{date format="YYYY-MM-DD"}}">{{date format="D MMM YYYY"}}</time>
-                                <span class="byline-reading-time"><span class="bull">&bull;</span> {{reading_time}}</span>
+                                <div class="author-info">
+                                    {{#if bio}}
+                                    <div class="bio">
+                                        <h2>{{name}}</h2>
+                                        <p>{{bio}}</p>
+                                        <p><a href="{{url}}">More posts</a> by {{name}}.</p>
+                                    </div>
+                                    {{else}}
+                                    <h2>{{name}}</h2>
+                                    <p>Read <a href="{{url}}">more posts</a> by this author.</p>
+                                    {{/if}}
+                                </div>
                             </div>
-                        </section>
 
+                            {{#if profile_image}}
+                            <a href="{{url}}" class="author-avatar">
+                                <img class="author-profile-image" src="{{img_url profile_image size="xs"}}" alt="{{name}}" />
+                            </a>
+                            {{else}}
+                            <a href="{{url}}" class="author-avatar author-profile-image">{{> "icons/avatar"}}</a>
+                            {{/if}}
+
+                        </li>
+                        {{/foreach}}
+                    </ul>
+
+                    <section class="post-full-byline-meta">
+                        <h4 class="author-name">{{authors}}</h4>
+                        <div class="byline-meta-content">
+                            <time class="byline-meta-date" datetime="{{date format="YYYY-MM-DD"}}">{{date format="D MMM YYYY"}}</time>
+                            <span class="byline-reading-time"><span class="bull">&bull;</span> {{reading_time}}</span>
+                        </div>
                     </section>
 
+                </section>
 
-                </div>
+            </div>
 
             {{!-- Email subscribe form at the bottom of the page
             {{#if @labs.members}}
@@ -117,9 +116,21 @@ into the {body} of the default.hbs template --}}
             --}}
             
             <section class="post-full-comments">
-                If you want to embed comments, this is a good place to do it!
+                <div id="disqus_thread"></div>
+                <script>
+                var disqus_config = function () {
+                    this.page.url = "{{url absolute="true"}}";  
+                    this.page.identifier = "ghost-{{comment_id}}"
+                };
+                (function() {
+                var d = document, s = d.createElement('script');
+                s.src = 'https://setupshare-com.disqus.com/embed.js';
+                s.setAttribute('data-timestamp', +new Date());
+                (d.head || d.body).appendChild(s);
+                })();
+                </script>
+
             </section>
-            a
 
         </article>
 
