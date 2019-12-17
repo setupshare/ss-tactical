@@ -213,6 +213,7 @@ body {
     font-size: 6.4rem;
     font-weight: 600;
     opacity: 1.0;
+    text-align: center;
 }
 
 
@@ -255,17 +256,26 @@ body {
     }
 }
 
+@media (max-width: 700px) {
+    .site-home-header .site-description {
+        font-size: 4.8rem;
+    }
+}
+
 @media (max-width: 500px) {
     .site-home-header .site-title {
         font-size: 3.2rem;
     }
 
     .site-home-header .site-description {
-        font-size: 1.8rem;
+        font-size: 3.2rem;
     }
 
     .site-archive-header .site-header-content {
         min-height: unset;
+    }
+    .site-header-content {
+        min-height: 200px;
     }
 }
 
@@ -595,6 +605,99 @@ The knock-on effect of this is ugly browser-scroll bars at the bottom, so 80px o
         display: none;
     }
 }
+
+/* menu */
+
+/*.site-nav-content .nav {
+    clear: both;
+    max-height: 0;
+    transition: max-height .2s ease-out;
+  }*/
+  
+  /* menu icon */
+  
+  /*.site-nav-content .menu-icon {
+    cursor: pointer;
+    display: inline-block;
+    float: right;
+    padding: 28px 20px;
+    position: relative;
+    user-select: none;
+  }
+  
+  .site-nav-content .menu-icon .navicon {
+    background: #333;
+    display: block;
+    height: 2px;
+    position: relative;
+    transition: background .2s ease-out;
+    width: 18px;
+  }
+  
+  .site-nav-content .menu-icon .navicon:before,
+  .site-nav-content .menu-icon .navicon:after {
+    background: #333;
+    content: '';
+    display: block;
+    height: 100%;
+    position: absolute;
+    transition: all .2s ease-out;
+    width: 100%;
+  }
+  
+  .site-nav-content .menu-icon .navicon:before {
+    top: 5px;
+  }
+  
+  .site-nav-content .menu-icon .navicon:after {
+    top: -5px;
+  }*/
+  
+  /* menu btn */
+  
+  /*.site-nav-content .menu-btn {
+    display: none;
+  }
+  
+  .site-nav-content .menu-btn:checked ~ .menu {
+    max-height: 240px;
+  }
+  
+  .heasite-nav-contentder .menu-btn:checked ~ .menu-icon .navicon {
+    background: transparent;
+  }
+  
+  .site-nav-content .menu-btn:checked ~ .menu-icon .navicon:before {
+    transform: rotate(-45deg);
+  }
+  
+  .site-nav-content .menu-btn:checked ~ .menu-icon .navicon:after {
+    transform: rotate(45deg);
+  }
+  
+  .site-nav-content .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
+  .site-nav-content .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
+    top: 0;
+  }*/
+
+  /* 48em = 768px */
+
+/*@media (min-width: 48em) {
+    .site-nav-content li {
+      float: left;
+    }
+    .site-nav-content li a {
+      padding: 20px 30px;
+    }
+    .site-nav-content .menu {
+      clear: none;
+      float: right;
+      max-height: none;
+    }
+    .site-nav-content .menu-icon {
+      display: none;
+    }
+  }*/
 
 
 /* 6. Post Feed
