@@ -1909,7 +1909,7 @@ Usage (In Ghost editor):
     overflow: hidden;
     margin: 0 25px 50px;
     padding: 25px;
-    background: #222222;
+    background: var(--medgreybg);
     border-radius: 3px;
 }
 
@@ -3040,7 +3040,7 @@ Usage (In Ghost editor):
 
     .author-avatar,
     .static-avatar {
-        border-color: color(var(--darkgrey) l(+2%));
+        border-color: var(--medgreybg);
     }
 
     .site-main,
