@@ -10,13 +10,17 @@
     --yellow: #fecd35;
     --red: #f05230;
     --darkgrey: #2E2E2E;
+    --darkgreybg: #111111;
+    --darkborder: rgba(51,51,51,.75);
     --grey: #66696d;
     --midgrey: #738a94;
+    --middarkgrey: #aaaaaa;
     --lightgrey: #c5d2d9;
     --whitegrey: #ededed;
     --pink: #fa3a57;
     --brown: #a3821a;
     --darkmode: #000000;
+    --darkwhite: #f5f5f7;
 }
 
 /* Reset
@@ -284,7 +288,7 @@ html {
 body {
     overflow-x: hidden;
     color: color(var(--midgrey) l(-30%));
-    font-family: Nunito,Arial,sans-serif;
+    font-family:"SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
     font-size: 1.6rem;
     line-height: 1.6em;
     font-weight: 400;
@@ -440,7 +444,7 @@ h6 {
 
 h1 {
     margin: 0 0 0.5em 0;
-    font-size: 5.5rem;
+    font-size: 6.4rem;
     font-weight: 600;
 }
 @media (max-width: 500px) {

@@ -210,8 +210,8 @@ body {
 }
 
 .site-home-header .site-description {
-    font-size: 3.6rem;
-    font-weight: 700;
+    font-size: 6.4rem;
+    font-weight: 600;
     opacity: 1.0;
 }
 
@@ -280,6 +280,7 @@ body {
     left: 0;
     z-index: 1000;
     background: var(--darkmode);
+    border-bottom: 1px solid var(--darkborder);
 }
 
 .site-nav {
@@ -688,10 +689,9 @@ The knock-on effect of this is ugly browser-scroll bars at the bottom, so 80px o
 .post-card-primary-tag {
     margin: 0 0 0.2em;
     color: var(--blue);
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     font-weight: 500;
     letter-spacing: 0.2px;
-    text-transform: uppercase;
 }
 
 .post-card-title {
@@ -959,17 +959,17 @@ make sure this only happens on large viewports / desktop-ish devices.
     padding: 70px 170px 50px;
     border-top-left-radius: 3px;
     border-top-right-radius: 3px;
+    text-align: center;
 }
 
 .post-full-tags {
-    display: flex;
-    justify-content: flex-start;
+    /*display: flex;
+    justify-content: flex-start;*/
     align-items: center;
     color: var(--midgrey);
-    font-size: 1.3rem;
+    font-size: 3.2rem;
     line-height: 1.4em;
     font-weight: 600;
-    text-transform: uppercase;
 }
 
 .post-full-meta-date {
@@ -999,15 +999,16 @@ make sure this only happens on large viewports / desktop-ish devices.
 
 .post-full-title {
     margin: 0 0 0.2em;
+    font-size: 7.2rem;
     color: color(var(--darkgrey) l(-5%));
 }
 
 .post-full-custom-excerpt {
     margin: 20px 0 0;
     color: var(--midgrey);
-    font-size: 2.3rem;
+    font-size: 2.4rem;
     line-height: 1.4em;
-    font-weight: 300;
+    font-weight: 400;
 }
 
 .date-divider {
@@ -1037,8 +1038,8 @@ make sure this only happens on large viewports / desktop-ish devices.
     margin: 0 auto;
     padding: 0 170px 6vw;
     min-height: 230px;
-    font-size: 2.0rem;
-    line-height: 1.6em;
+    font-size: 2.1rem;
+    line-height: 1.4em;
     background: #fff;
 }
 
@@ -2954,9 +2955,9 @@ Usage (In Ghost editor):
 .site-footer {
     position: relative;
     padding-top: 20px;
-    padding-bottom: 60px;
+    padding-bottom: 20px;
     color: #fff;
-    background: color(var(--darkgrey) l(-5%));
+    background: var(--darkgreybg);
 }
 
 .site-footer-content {
@@ -3017,7 +3018,7 @@ Usage (In Ghost editor):
 /* ---------------------------------------------------------- */
 @media (prefers-color-scheme: dark) {
     body {
-        color: rgba(255, 255, 255, 0.75);
+        color: var(--middarkgrey);
         background: var(--darkmode);
     }
 
@@ -3035,7 +3036,7 @@ Usage (In Ghost editor):
 
     .post-card,
     .post-card:hover {
-        border-bottom-color: color(var(--darkmode) l(+8%));
+        border-bottom-color: var(--darkborder);
     }
 
     .author-profile-image {
@@ -3055,11 +3056,11 @@ Usage (In Ghost editor):
     }
 
     .post-card-title {
-        color: rgba(255, 255, 255, 0.85);
+        color: var(--darkwhite);
     }
 
     .post-card-excerpt {
-        color: color(var(--midgrey) l(+10%));
+        color: var(--middarkgrey);
     }
 
     .author-avatar,
@@ -3078,11 +3079,11 @@ Usage (In Ghost editor):
     }
 
     .post-full-title {
-        color: rgba(255, 255, 255, 0.9);
+        color: var(--darkwhite);
     }
 
     .post-full-custom-excerpt {
-        color: color(var(--midgrey) l(+10%));
+        color: var(--middarkgrey);
     }
 
     .post-full-image {
@@ -3119,7 +3120,7 @@ Usage (In Ghost editor):
     .post-full-content h3,
     .post-full-content h4,
     .post-full-content h6 {
-        color: rgba(255, 255, 255, 0.9);
+        color: var(--darkwhite);
     }
 
     .post-full-content a {
