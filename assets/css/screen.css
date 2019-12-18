@@ -3148,7 +3148,7 @@ Usage (In Ghost editor):
     }
 
     .site-nav-logo img {
-        opacity: 0.85;
+        opacity: 1;
     }
 
     .site-header-background:before {
