@@ -3085,17 +3085,17 @@ Usage (In Ghost editor):
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-    color: rgba(255,255,255,0.7);
+    color: var(--grey);
     font-size: 1.3rem;
 }
 
 .site-footer-content a {
-    color: rgba(255,255,255,0.7);
+    color: var(--grey);
 }
 
 .site-footer-content a:hover {
-    color: rgba(255,255,255,1);
-    text-decoration: none;
+    color: var(--grey);
+    text-decoration: underline;
 }
 
 .site-footer-nav {
@@ -3115,7 +3115,7 @@ Usage (In Ghost editor):
     display: block;
     width: 2px;
     height: 2px;
-    background: #fff;
+    background: var(--grey);
     border-radius: 100%;
 }
 
