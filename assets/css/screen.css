@@ -1120,14 +1120,23 @@ make sure this only happens on large viewports / desktop-ish devices.
     align-items: center;
     overflow: hidden;
     margin-bottom: 50px;
-    background: color(var(--lightgrey) l(+10%));
-    border-radius: 3px;
 }
 
 .post-full-image img {
-    max-width: 1040px;
+    max-width: 1400px;
     width: 100%;
     height: auto;
+    border-radius: 3px;
+}
+
+@media (max-width:1400px) {
+    .post-full-image {
+        margin-right: -5vw;
+        margin-left: -5vw;
+    }
+    .post-full-image img {
+        border-radius: 0;
+    }
 }
 
 .post-full-content {
