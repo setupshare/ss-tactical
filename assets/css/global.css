@@ -287,7 +287,7 @@ html {
 }
 body {
     overflow-x: hidden;
-    color: color(var(--midgrey) l(-30%));
+    color: var(--darkgrey);
     font-family:"SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
     font-size: 1.6rem;
     line-height: 1.6em;

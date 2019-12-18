@@ -3136,7 +3136,7 @@ Usage (In Ghost editor):
 
 /* 12. Dark Mode
 /* ---------------------------------------------------------- */
-@media (prefers-color-scheme: dark) {
+/*@media (prefers-color-scheme: dark) {*/
     body {
         color: var(--darkwhite);
         background: var(--darkmode);
@@ -3352,4 +3352,4 @@ Usage (In Ghost editor):
     .subscribe-form .success .message-success {
         color: color(var(--green) l(+5%) s(-5%));
     }
-}
+/*}*/
