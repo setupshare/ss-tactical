@@ -3147,6 +3147,10 @@ Usage (In Ghost editor):
     }
 
     .site-nav-logo img {
+        opacity: 0.85;
+    }
+
+    .site-nav-logo img:hover {
         opacity: 1.0;
     }
 
