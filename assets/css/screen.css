@@ -1240,6 +1240,7 @@ make sure this only happens on large viewports / desktop-ish devices.
     margin: 1.5em auto;
     max-width: 1040px;
     height: auto;
+    border-radius: 3px;
 }
 @media (max-width: 1040px) {
     .post-full-content img,
