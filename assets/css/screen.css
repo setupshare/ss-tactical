@@ -3150,10 +3150,6 @@ Usage (In Ghost editor):
         opacity: 0.85;
     }
 
-    .site-nav-logo img:hover {
-        opacity: 1.0;
-    }
-
     .site-header-background:before {
         background: rgba(0,0,0,0.3);
     }
