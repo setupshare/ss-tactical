@@ -43,15 +43,14 @@
 
     {{!-- The big email subscribe modal content --}}
 
-    <div id="subscribe" class="subscribe-overlay">
-        <a class="subscribe-overlay-close" href="#"></a>
-        <div class="subscribe-overlay-content">
+    <div id="submit-setup" class="submit-overlay">
+        <a class="submit-overlay-close" href="#"></a>
+        <div class="submit-overlay-content">
             {{#if @site.logo}}
-                <img class="subscribe-overlay-logo" src="{{@site.logo}}" alt="{{@site.title}}" />
+                <img class="submit-overlay-logo" src="{{@site.logo}}" alt="{{@site.title}}" />
             {{/if}}
-            <h1 class="subscribe-overlay-title">Submit your setup to {{@site.title}}.</h1>
-            <p class="subscribe-overlay-description">Send an email to</p>
-            <h2 class="subscribe-overlay-link"><a href="mailto:setupshare@gmail.com?subject=SetupShare Submission">setupshare@gmail.com</a></h2>
+            <h1 class="submit-overlay-title">Submit your setup to {{@site.title}}.</h1>
+            <h2 class="submit-overlay-link">Send an email to: <a href="mailto:setupshare@gmail.com?subject=SetupShare Submission">setupshare@gmail.com</a></h2>
             {{!--subscribe_form placeholder="youremail@example.com" --}}
         </div>
     </div>

@@ -2696,7 +2696,7 @@ Usage (In Ghost editor):
 /* 10. Subscribe Overlay
 /* ---------------------------------------------------------- */
 
-.subscribe-overlay {
+.submit-overlay {
     position: fixed;
     top: 0;
     right: 0;
@@ -2714,12 +2714,12 @@ Usage (In Ghost editor):
     backdrop-filter: blur(3px);
 }
 
-.subscribe-overlay:target {
+.submit-overlay:target {
     opacity: 1;
     pointer-events: auto;
 }
 
-.subscribe-overlay-content {
+.submit-overlay-content {
     position: relative;
     z-index: 9999;
     margin: 0 0 5vw 0;
@@ -2728,45 +2728,36 @@ Usage (In Ghost editor):
     text-align: center;
 }
 
-.subscribe-overlay-logo {
+.submit-overlay-logo {
     position: fixed;
     top: 23px;
     left: 30px;
     height: 30px;
 }
 
-.subscribe-overlay-title {
+.submit-overlay-title {
     display: inline-block;
     margin: 0 0 10px 0;
-    font-size: 3.6rem;
+    font-size: 5.4rem;
     line-height: 1.15em;
 }
 
-.subscribe-overlay-description {
-    margin: 0 0 10px 0;
-    max-width: 650px;
-    font-size: 2.2rem;
-    line-height: 1.3em;
+.submit-overlay-link {
+    font-size: 3.2rem;
     font-weight: 400;
-    opacity: 0.8;
-}
-
-.subscribe-overlay-link {
-    font-size: 2.6rem;
-    margin: 0 auto;
+    color: var(--midgrey);
 }
 
 .subscribe-overlay-link a {
-    color: #fff;
+    color: var(--blue);
+    text-decoration: none;
+}
+
+.submit-overlay-link a:hover {
     text-decoration: underline;
-    opacity: 0.8;
 }
 
-.subscribe-overlay-link a:hover {
-    opacity: 1;
-}
-
-.subscribe-overlay form {
+.submit-overlay form {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -2774,11 +2765,11 @@ Usage (In Ghost editor):
     max-width: 500px;
 }
 
-.subscribe-overlay .form-group {
+.submit-overlay .form-group {
     flex-grow: 1;
 }
 
-.subscribe-overlay .subscribe-email {
+.submit-overlay .subscribe-email {
     display: block;
     padding: 14px 20px;
     width: 100%;
@@ -2795,12 +2786,12 @@ Usage (In Ghost editor):
     -webkit-appearance: none;
 }
 
-.subscribe-email:focus {
+.submit-email:focus {
     outline: 0;
     border-color: color(var(--lightgrey) l(-2%));
 }
 
-.subscribe-overlay button {
+.submit-overlay button {
     display: inline-block;
     margin: 0 0 0 15px;
     padding: 0 25px;
@@ -2824,12 +2815,12 @@ Usage (In Ghost editor):
     -webkit-font-smoothing: subpixel-antialiased;
 }
 
-.subscribe-overlay button:active,
-.subscribe-overlay button:focus {
+.submit-overlay button:active,
+.submit-overlay button:focus {
     background: color(var(--blue) lightness(-9%) saturation(-10%));
 }
 
-.subscribe-overlay-close {
+.submit-overlay-close {
     position: absolute;
     top: 0;
     right: 0;
@@ -2838,7 +2829,7 @@ Usage (In Ghost editor):
     display: block;
 }
 
-.subscribe-overlay-close:before {
+.submit-overlay-close:before {
     content: "";
     position: absolute;
     top: 40px;
@@ -2851,7 +2842,7 @@ Usage (In Ghost editor):
     transform: rotate(45deg);
 }
 
-.subscribe-overlay-close:after {
+.submit-overlay-close:after {
     content: "";
     position: absolute;
     top: 40px;
@@ -2864,7 +2855,7 @@ Usage (In Ghost editor):
     transform: rotate(-45deg);
 }
 
-.subscribe-overlay-close:hover {
+.submit-overlay-close:hover {
     cursor: default;
 }
 
@@ -2872,7 +2863,7 @@ Usage (In Ghost editor):
 /* 10. Subscribe Message and Overlay
 /* ---------------------------------------------------------- */
 
-.subscribe-success-message {
+.submit-success-message {
     position: fixed;
     top: 0;
     right: 0;
@@ -2886,18 +2877,18 @@ Usage (In Ghost editor):
     transform: translateY(-175%);
 }
 
-.subscribe-success .subscribe-success-message {
+.submit-success .submit-success-message {
     visibility: visible;
     transform: translateY(0);
 }
 
-.subscribe-success-message.close {
+.submit-success-message.close {
     visibility: hidden;
     transition: all 1.35s cubic-bezier(0.19, 1, 0.22, 1);
     transform: translateY(-175%);
 }
 
-.subscribe-close {
+.submit-close {
     position: absolute;
     top: 0;
     right: 0;
@@ -2906,7 +2897,7 @@ Usage (In Ghost editor):
     display: block;
 }
 
-.subscribe-close:before {
+.submit-close:before {
     content: "";
     position: absolute;
     top: 32px;
@@ -2919,7 +2910,7 @@ Usage (In Ghost editor):
     transform: rotate(45deg);
 }
 
-.subscribe-close:after {
+.submit-close:after {
     content: "";
     position: absolute;
     top: 32px;
@@ -2932,11 +2923,11 @@ Usage (In Ghost editor):
     transform: rotate(-45deg);
 }
 
-.subscribe-close:hover {
+.submit-close:hover {
     cursor: default;
 }
 
-.subscribe-overlay {
+.submit-overlay {
     position: fixed;
     top: 0;
     right: 0;
@@ -2952,18 +2943,18 @@ Usage (In Ghost editor):
     pointer-events: none;
 }
 
-.subscribe-overlay .subscribe-close:before,
-.subscribe-overlay .subscribe-close:after {
+.submit-overlay .submit-close:before,
+.submit-overlay .submit-close:after {
     top: 36px;
     width: 30px;
 }
 
-.subscribe-overlay:target {
+.submit-overlay:target {
     opacity: 1;
     pointer-events: auto;
 }
 
-.subscribe-overlay-content {
+.submit-overlay-content {
     position: relative;
     z-index: 9999;
     margin: 0 0 5vw 0;
@@ -2972,37 +2963,37 @@ Usage (In Ghost editor):
     text-align: center;
 }
 
-.subscribe-overlay .subscribe-form {
+.submit-overlay .submit-form {
     border: none;
     color: #fff;
     background: none;
 }
 
-.subscribe-overlay-logo {
+.submit-overlay-logo {
     position: fixed;
     top: 23px;
     left: 30px;
     height: 30px;
 }
 
-.subscribe-overlay-title {
+.submit-overlay-title {
     display: inline-block;
     margin: 0 0 10px 0;
-    font-size: 5.2rem;
+    font-size: 5.4rem;
     line-height: 1.15em;
 }
 
-.subscribe-overlay-description {
+.submit-overlay-description {
     margin: 0 auto 50px;
     max-width: 650px;
     color: #fff;
     font-size: 2.4rem;
     line-height: 1.3em;
-    font-weight: 300;
+    font-weight: 400;
     opacity: 0.8;
 }
 
-.subscribe-overlay form {
+.submit-overlay form {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -3010,11 +3001,11 @@ Usage (In Ghost editor):
     max-width: 540px;
 }
 
-.subscribe-overlay .form-group {
+.submit-overlay .form-group {
     flex-grow: 1;
 }
 
-.subscribe-overlay .subscribe-email {
+.submit-overlay .submit-email {
     display: block;
     padding: 14px 20px;
     width: 100%;
@@ -3031,12 +3022,12 @@ Usage (In Ghost editor):
     -webkit-appearance: none;
 }
 
-.subscribe-email:focus {
+.submit-email:focus {
     outline: 0;
     border-color: color(var(--lightgrey) l(-2%));
 }
 
-.subscribe-overlay button {
+.submit-overlay button {
     display: inline-block;
     margin: 0 0 0 15px;
     padding: 0 25px;
@@ -3058,12 +3049,12 @@ Usage (In Ghost editor):
     -webkit-font-smoothing: subpixel-antialiased;
 }
 
-.subscribe-overlay button:active,
-.subscribe-overlay button:focus {
+.submit-overlay button:active,
+.submit-overlay button:focus {
     background: color(var(--blue) lightness(-9%) saturation(-10%));
 }
 
-.subscribe-overlay .loading .button-loader {
+.submit-overlay .loading .button-loader {
     top: 5px;
 }
 
