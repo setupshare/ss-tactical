@@ -304,6 +304,7 @@ body {
 
 ::selection {
     text-shadow: none;
+    color: #ffffff;
     background: var(--purple);
 }
 
