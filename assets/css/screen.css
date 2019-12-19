@@ -1123,7 +1123,7 @@ make sure this only happens on large viewports / desktop-ish devices.
 }
 
 .post-full-image img {
-    max-width: 1400px;
+    max-width: 1040px;
     width: 100%;
     height: auto;
     border-radius: 3px;
