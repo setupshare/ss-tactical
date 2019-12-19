@@ -2546,12 +2546,12 @@ Usage (In Ghost editor):
 }
 
 .no-image .author-header-content .author-bio {
-    color: var(--midgrey);
+    color: var(--grey);
     opacity: 1.0;
 }
 
 .no-image .author-header-content .author-meta {
-    color: var(--midgrey);
+    color: var(--grey);
     opacity: 1.0;
 }
 
