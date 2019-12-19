@@ -1129,7 +1129,7 @@ make sure this only happens on large viewports / desktop-ish devices.
     border-radius: 3px;
 }
 
-@media (max-width:1400px) {
+@media (max-width:1040px) {
     .post-full-image {
         margin-right: -5vw;
         margin-left: -5vw;
