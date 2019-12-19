@@ -237,7 +237,7 @@ body {
 }
 
 .site-archive-header .no-image .site-description {
-    color: var(--midgrey);
+    color: var(--grey);
     opacity: 1.0;
 }
 
