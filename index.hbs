@@ -2,15 +2,8 @@
 {{!-- The tag above means: insert everything in this file
 into the {body} of the default.hbs template --}}
 
-<header class="site-home-header">
-    {{> header-background background=@site.cover_image}} {{!--Special header-image.hbs partial to generate the background image--}}
-        <div class="inner-nav">
-            {{> "site-nav"}}
-            <div class="site-header-content">
-                <h1 class="site-description">{{@site.description}}</h1>
-            </div>
-        </div>
-    </div>
+<header class="site-header">
+    {{> site-header}}
 </header>
 
 {{!-- The main content area --}}
@@ -28,8 +21,6 @@ into the {body} of the default.hbs template --}}
 
     </div>
 </main>
-
-{{> site-header}}
 
 {{!-- The #contentFor helper here will send everything inside it up to the matching #block helper found in default.hbs --}}
 {{#contentFor "scripts"}}
