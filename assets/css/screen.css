@@ -883,8 +883,7 @@ body {
 }
 
 .post-card-title {
-    /*margin: 0 0 0.4em;*/
-    margin: 0;
+    margin: 0 0 0.4em;
     line-height: 1.15em;
     transition: color 0.2s ease-in-out;
 }
@@ -905,7 +904,7 @@ body {
 }
 
 .post-card-excerpt p {
-    margin-bottom: 1em;
+    margin-bottom: 0.5em;
 }
 
 .post-card-meta {
@@ -1007,9 +1006,10 @@ body {
 }
 
 .post-card-home-date {
-    font-size: 1.5rem;
-    color: var(--grey);
+    font-size: 1.3rem;
+    color: color(var(--midgrey) l(-10%));
     letter-spacing: 0.2px;
+    font-weight: 500;
 }
 
 .post-card-post-date {
@@ -1108,7 +1108,7 @@ make sure this only happens on large viewports / desktop-ish devices.
     }
 
     .post-card-large .post-card-excerpt p {
-        margin-bottom: 1.5em;
+        margin-bottom: 0.6em;
         font-size: 1.8rem;
         line-height: 1.5em;
     }
