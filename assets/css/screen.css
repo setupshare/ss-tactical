@@ -1469,9 +1469,9 @@ Usage (In Ghost editor):
     color: inherit;
 }
 
-.post-full-content .fluid-width-video-wrapper {
+/*.post-full-content .fluid-width-video-wrapper {
     margin: 1.5em 0 3em;
-}
+}*/
 
 .post-full-content hr {
     margin: 2em 0;
@@ -2337,7 +2337,7 @@ Usage (In Ghost editor):
 }
 
 .post-full-content figure {
-    margin: 0.8em 0 2.3em;
+    margin: 0 0 2.3em;
 }
 
 .post-full-content h1 + figure,
