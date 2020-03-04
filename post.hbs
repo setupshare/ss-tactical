@@ -17,7 +17,7 @@ into the {body} of the default.hbs template --}}
         <div class="inner">
             <header class="post-full-header">
 
-                <span class="post-card-post-date"><time datetime="{{date format="YYYY-MM-DD"}}">{{date format="MMM D, YYYY"}}</time></span>
+                <span class="post-card-post-date">{{#primary_tag}}{{name}} • {{/primary_tag}}<time datetime="{{date format="YYYY-MM-DD"}}">{{date format="MMM D, YYYY"}}</time></span>
 
                 <h1 class="post-full-title">{{title}}</h1>
 
