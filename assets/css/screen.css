@@ -1012,6 +1012,10 @@ body {
     font-weight: 500;
 }
 
+.post-card-home-date i {
+    margin-right: 4px;
+}
+
 .post-card-post-date {
     font-size: 2.8rem;
     line-height: 1.4em;
