@@ -883,7 +883,8 @@ body {
 }
 
 .post-card-title {
-    margin: 0 0 0.4em;
+    /*margin: 0 0 0.4em;*/
+    margin: 0;
     line-height: 1.15em;
     transition: color 0.2s ease-in-out;
 }
@@ -1008,7 +1009,6 @@ body {
 .post-card-home-date {
     font-size: 1.5rem;
     color: var(--grey);
-    margin: 0 0 0.2em;
     letter-spacing: 0.2px;
 }
 
