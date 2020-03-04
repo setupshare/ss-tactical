@@ -1738,10 +1738,11 @@ Usage (In Ghost editor):
     display: flex;
     justify-content: space-between;
     margin: 0 auto;
-    padding-top: 15px;
-    padding-bottom:7vw;
+    /*padding-top: 15px;*/
+    padding-bottom:4vw;
+    /*padding-bottom:7vw;*/
     max-width: 700px;
-    border-top: 1px solid color(var(--lightgrey) l(+10%));
+    /*border-top: 1px solid color(var(--lightgrey) l(+10%));*/
 }
 
 .post-full-byline-content {
