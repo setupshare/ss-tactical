@@ -1007,7 +1007,7 @@ body {
 
 .post-card-home-date {
     font-size: 1.3rem;
-    color: color(var(--midgrey) l(-10%));
+    color: color(var(--gray));
     letter-spacing: 0.2px;
     font-weight: 500;
 }
@@ -3215,16 +3215,16 @@ Usage (In Ghost editor):
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-    color: var(--grey);
+    color: var(--gray);
     font-size: 1.3rem;
 }
 
 .site-footer-content a {
-    color: var(--grey);
+    color: var(--gray);
 }
 
 .site-footer-content a:hover {
-    color: var(--grey);
+    color: var(--gray);
     text-decoration: underline;
 }
 
