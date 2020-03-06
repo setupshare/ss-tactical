@@ -876,8 +876,9 @@ body {
 
 .post-card-primary-tag {
     margin: 0 0 0.2em;
+    text-transform: uppercase;
     color: var(--blue);
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     font-weight: 500;
     letter-spacing: 0.2px;
 }
@@ -1163,15 +1164,16 @@ make sure this only happens on large viewports / desktop-ish devices.
     padding: 80px 170px 50px;
     border-top-left-radius: 3px;
     border-top-right-radius: 3px;
-    text-align: center;
+    text-align: left;
 }
 
 .post-full-tags {
     /*display: flex;
     justify-content: flex-start;*/
     align-items: center;
+    text-transform: uppercase;
     color: var(--midgrey);
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     line-height: 1.4em;
     font-weight: 600;
 }
@@ -1184,6 +1186,7 @@ make sure this only happens on large viewports / desktop-ish devices.
     font-size: 1.3rem;
     line-height: 1.4em;
     font-weight: 600;
+    margin-top: 20px;
 }
 
 .post-full-date i {
@@ -1215,7 +1218,7 @@ make sure this only happens on large viewports / desktop-ish devices.
 }
 
 .post-full-title {
-    margin: 8px 0 16px 0;
+    margin: 0 0 .2em;
     font-size: 5.6rem;
     color: color(var(--darkgrey) l(-5%));
 }
