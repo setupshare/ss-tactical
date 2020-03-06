@@ -1171,7 +1171,7 @@ make sure this only happens on large viewports / desktop-ish devices.
     justify-content: flex-start;*/
     align-items: center;
     color: var(--midgrey);
-    font-size: 2.4rem;
+    font-size: 1.5rem;
     line-height: 1.4em;
     font-weight: 600;
 }
@@ -1181,7 +1181,7 @@ make sure this only happens on large viewports / desktop-ish devices.
     justify-content: flex-start;*/
     align-items: center;
     color: var(--midgrey);
-    font-size: 1.6rem;
+    font-size: 1.3rem;
     line-height: 1.4em;
     font-weight: 600;
 }
@@ -1215,7 +1215,7 @@ make sure this only happens on large viewports / desktop-ish devices.
 }
 
 .post-full-title {
-    margin: 10px 0 15px 0;
+    margin: 8px 0 16px 0;
     font-size: 5.6rem;
     color: color(var(--darkgrey) l(-5%));
 }
