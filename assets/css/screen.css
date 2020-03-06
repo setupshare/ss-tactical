@@ -1182,7 +1182,7 @@ make sure this only happens on large viewports / desktop-ish devices.
     /*display: flex;
     justify-content: flex-start;*/
     align-items: center;
-    color: var(--midgrey);
+    color: var(--gray);
     font-size: 1.3rem;
     line-height: 1.4em;
     font-weight: 600;
