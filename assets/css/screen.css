@@ -1177,6 +1177,21 @@ make sure this only happens on large viewports / desktop-ish devices.
     margin-bottom: .2em;
 }
 
+.post-full-date {
+    /*display: flex;
+    justify-content: flex-start;*/
+    align-items: center;
+    color: var(--midgrey);
+    font-size: 1.6rem;
+    line-height: 1.4em;
+    font-weight: 600;
+    margin-top: .2em;
+}
+
+.post-full-date i {
+    margin-right: 8px;
+}
+
 @media only screen and (max-width: 500px) {
     .post-full-tags {
         font-size: 1.8rem;

@@ -27,6 +27,10 @@ into the {body} of the default.hbs template --}}
 
                 <h1 class="post-full-title">{{title}}</h1>
 
+                <section class="post-full-date">
+                    {{date published_at format="MMMM D, YYYY"}}
+                </section>
+
             </header>
             <!--{{#if feature_image}}
             </div>
@@ -55,7 +59,7 @@ into the {body} of the default.hbs template --}}
             <div class="post-full-byline">
 
                 <section class="post-full-byline-content">
-                    <span class="post-card-home-date"><i class="far fa-calendar"></i> {{date published_at format="MMMM D, YYYY"}}</span>
+                    <span class="post-card-home-date"><i class="far fa-clock"></i> {{date timeago="true"}}</span>
                     <!--
                     <ul class="author-list">
                         {{#foreach authors}}
