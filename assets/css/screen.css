@@ -1171,9 +1171,10 @@ make sure this only happens on large viewports / desktop-ish devices.
     justify-content: flex-start;*/
     align-items: center;
     color: var(--midgrey);
-    font-size: 3.2rem;
+    font-size: 2.6rem;
     line-height: 1.4em;
     font-weight: 600;
+    margin-bottom: .2em;
 }
 
 @media only screen and (max-width: 500px) {
