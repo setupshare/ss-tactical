@@ -1758,7 +1758,7 @@ Usage (In Ghost editor):
     /*padding-top: 15px;*/
     padding-bottom:4vw;
     /*padding-bottom:7vw;*/
-    max-width: 700px;
+    max-width: 900px;
     /*border-top: 1px solid color(var(--lightgrey) l(+10%));*/
 }
 
@@ -2107,7 +2107,7 @@ Usage (In Ghost editor):
 .post-full-comments {
     margin: 0 auto;
     padding: 16px 32px;
-    max-width: 750px;
+    max-width: 900px;
     background-color: var(--darkgreybg);
     border-radius: 6px;
 }
