@@ -1161,7 +1161,7 @@ make sure this only happens on large viewports / desktop-ish devices.
 .post-full-header {
     position: relative;
     margin: 0 auto;
-    padding: 80px 170px 50px;
+    padding: 80px 70px 50px;
     border-top-left-radius: 3px;
     border-top-right-radius: 3px;
     text-align: left;
@@ -1283,7 +1283,7 @@ make sure this only happens on large viewports / desktop-ish devices.
 .post-full-content {
     position: relative;
     margin: 0 auto;
-    padding: 0 170px 1vw;
+    padding: 0 70px 1vw;
     min-height: 230px;
     font-size: 2.1rem;
     line-height: 1.4em;
@@ -2347,7 +2347,7 @@ Usage (In Ghost editor):
 }
 
 .post-full-content .kg-card-embed {
-    max-width: 1040px;
+    max-width: 1152px;
 }
 
 .post-full-content .kg-width-wide .kg-image {
