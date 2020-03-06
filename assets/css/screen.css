@@ -1202,7 +1202,7 @@ make sure this only happens on large viewports / desktop-ish devices.
 
 .post-full-title {
     margin: 0 0 0.2em;
-    font-size: 6.4rem;
+    font-size: 5.6rem;
     color: color(var(--darkgrey) l(-5%));
 }
 
