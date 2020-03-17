@@ -28,7 +28,12 @@ into the {body} of the default.hbs template --}}
                 <h1 class="post-full-title">{{title}}</h1>
 
                 <section class="post-full-date">
-                    {{date published_at format="MMMM D, YYYY"}}
+                    {{#foreach tags from="2"}}
+                        <div class="post-date-tag">
+                            {{name}}<span class="post-date-dot">•</span>
+                        </div>
+                    {{/foreach}}
+                    <div class="post-date-tag">{{date published_at format="MMMM D, YYYY"}}</div>
                 </section>
 
             </header>
