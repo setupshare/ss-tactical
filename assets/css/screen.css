@@ -3283,6 +3283,11 @@ Usage (In Ghost editor):
     margin-right: 8px;
 }
 
+.post-card-home-date .post-date-dot {
+    margin-left: 4px;
+    margin-right: 4px;
+}
+
 @media (max-width: 650px) {
     .site-footer-content {
         flex-direction: column;
