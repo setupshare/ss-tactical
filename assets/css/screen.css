@@ -2157,7 +2157,7 @@ Usage (In Ghost editor):
 }
 
 .read-next .post-card:hover .post-card-image {
-    opacity: 1.0;
+    /*opacity: 1.0;*/
 }
 
 .read-next .post-card-excerpt {
@@ -3241,12 +3241,16 @@ Usage (In Ghost editor):
 }
 
 .site-footer-content a:hover {
-    color: var(--gray);
-    text-decoration: underline;
+    color: var(--darkwhite);
+    text-decoration: none;
 }
 
 .site-footer-nav {
     display: flex;
+}
+
+.site-footer-nav i {
+    margin-right: 6px;
 }
 
 .site-footer-nav a {
