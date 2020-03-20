@@ -1104,7 +1104,7 @@ make sure this only happens on large viewports / desktop-ish devices.
 
     .post-card-large .post-card-title {
         margin-top: 0;
-        font-size: 2.5rem;
+        /*font-size: 2.5rem;*/
     }
 
     .post-card-large .post-card-content-link {
