@@ -1204,7 +1204,7 @@ make sure this only happens on large viewports / desktop-ish devices.
 .post-full-meta-date {
     color: var(--midgrey);
     font-size: 1.2rem;
-    font-weight: 400;
+    font-weight: 700;
 }
 
 @media (max-width: 800px) {
@@ -1221,22 +1221,13 @@ make sure this only happens on large viewports / desktop-ish devices.
 
 .post-full-title {
     margin: 0 0 .2em;
-    font-size: 4.2rem;
+    font-size: 4.0rem;
     color: color(var(--darkgrey) l(-5%));
 }
 
 @media (max-width: 800px) {
     .post-full-title {
-        font-size: 5.4rem;
-    }
-    .post-full-tags {
-        font-size: 2.4rem;
-    }
-}
-
-@media (max-width: 800px) {
-    .post-full-title {
-        font-size: 5.4rem;
+        font-size: 3.8rem;
     }
     .post-full-tags {
         font-size: 1.8rem;
@@ -1248,13 +1239,13 @@ make sure this only happens on large viewports / desktop-ish devices.
     color: var(--midgrey);
     font-size: 2.4rem;
     line-height: 1.4em;
-    font-weight: 400;
+    font-weight: 600;
 }
 
 .date-divider {
     display: inline-block;
     margin: 0 6px 1px;
-    font-weight: 300;
+    font-weight: 600;
 }
 
 .post-full-image {
@@ -1300,12 +1291,12 @@ make sure this only happens on large viewports / desktop-ish devices.
 @media (max-width: 800px) {
     .post-full-content {
         padding: 0 5vw;
-        font-size: 1.8rem;
+        font-size: 1.6rem;
     }
 }
 @media (max-width: 500px) {
     .post-full-custom-excerpt {
-        font-size: 1.9rem;
+        font-size: 1.6rem;
         line-height: 1.5em;
     }
 }
@@ -1529,9 +1520,9 @@ Usage (In Ghost editor):
 
 .post-full-content h1 {
     margin: 0.5em 0 0.4em;
-    font-size: 4.2rem;
+    font-size: 3.6rem;
     line-height: 1.25em;
-    font-weight: 600;
+    font-weight: 700;
 }
 .post-full-content p + h1 {
     margin-top: 0.8em;
