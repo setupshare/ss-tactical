@@ -2164,6 +2164,7 @@ Usage (In Ghost editor):
 
 .read-next .post-card-excerpt {
     color: var(--grey);
+    font-weight: 600;
 }
 
 .read-next .static-avatar {
@@ -3353,6 +3354,7 @@ Usage (In Ghost editor):
 
     .post-card-excerpt {
         color: var(--grey);
+        font-weight: 600;
     }
 
     .author-avatar,
