@@ -4,7 +4,9 @@
 :root {
     /* Colours */
     --blue: #3999e9;
-    --darkblue: #3389D1;
+    --darkblue: #2591EA;
+    --darkbluehover: #1A88E2;
+    --darkblueborder: #00568F;
     --green: #a4d037;
     --purple: #493CD4;
     --yellow: #fecd35;
