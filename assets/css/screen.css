@@ -3272,6 +3272,8 @@ Usage (In Ghost editor):
 
 .site-footer-nav {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .site-footer-nav i {
