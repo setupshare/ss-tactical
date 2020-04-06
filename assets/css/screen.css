@@ -3314,7 +3314,7 @@ Usage (In Ghost editor):
     margin-right: 4px;
 }
 
-@media (max-width: 650px) {
+@media (max-width: 767px) {
     .site-footer-content {
         flex-direction: column;
     }
