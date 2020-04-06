@@ -335,6 +335,14 @@ body {
     box-shadow: 0 1px 0 var(--darkblueborder);
 }
 
+@media (max-width: 500px) {
+    .site-nav li a.ss-button {
+        padding: 12px;
+        margin: 10px 12px 20px;
+        text-align: center;
+    }
+}
+
 .site-nav .site-nav-logo {
     display: block;
     float: left;
@@ -402,7 +410,7 @@ body {
   }
   
   .site-nav .menu-btn:checked ~ .nav {
-    max-height: 240px;
+    max-height: 280px;
   }
   
   .site-nav .menu-btn:checked ~ .menu-icon .navicon {
