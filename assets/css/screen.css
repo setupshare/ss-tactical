@@ -335,7 +335,7 @@ body {
     box-shadow: 0 1px 0 var(--darkblueborder);
 }
 
-@media (max-width: 500px) {
+@media (max-width: 767px) {
     .site-nav li a.ss-button {
         padding: 12px;
         margin: 10px 12px 20px;
