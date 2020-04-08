@@ -1228,7 +1228,7 @@ make sure this only happens on large viewports / desktop-ish devices.
 
 @media only screen and (max-width: 500px) {
     .post-full-tags {
-        font-size: 1.8rem;
+        font-size: 1.3rem;
     }
 }
 
@@ -1261,7 +1261,7 @@ make sure this only happens on large viewports / desktop-ish devices.
         font-size: 3.8rem;
     }
     .post-full-tags {
-        font-size: 1.8rem;
+        font-size: 1.3rem;
     }
 }
 
@@ -1315,11 +1315,19 @@ make sure this only happens on large viewports / desktop-ish devices.
 }
 
 @media (max-width: 1170px) {
+    .post-full-header {
+        padding-left: 11vw;
+        padding-right: 11vw;
+    }
     .post-full-content {
         padding: 0 11vw;
     }
 }
 @media (max-width: 800px) {
+    .post-full-header {
+        padding-left: 5vw;
+        padding-right: 5vw;
+    }
     .post-full-content {
         padding: 0 5vw;
         font-size: 1.6rem;
@@ -1708,6 +1716,11 @@ Usage (In Ghost editor):
     .post-full-image {
         margin-top: 5px;
         margin-bottom: 5vw;
+    }
+
+    .post-full-header {
+        padding-left: 0;
+        padding-right: 0;
     }
 
     .post-full-content {
