@@ -42,6 +42,11 @@ into the {body} of the default.hbs template --}}
                 <div class="post-content">
                     {{content}}
                 </div>
+                <div class="post-share-buttons">
+                    <a href="https://www.facebook.com/sharer/sharer.php?u={{url absolute='true'}}" target="_blank" rel="noopener" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://twitter.com/intent/tweet?url={{url absolute='true'}}" target="_blank" rel="noopener" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="https://www.pinterest.com/pin/create/button/" data-pin-do="buttonBookmark"><i class="fab fa-pinterest"></i></a>
+                </div>
             </section>
 
             <div class="post-full-byline">
@@ -130,4 +135,6 @@ into the {body} of the default.hbs template --}}
         });
     });
 </script>
+<script type="text/javascript" async defer data-pin-custom="true" src="
+//assets.pinterest.com/js/pinit.js"></script>
 {{/contentFor}}

@@ -2377,6 +2377,30 @@ Usage (In Ghost editor):
     align-items: center;
 }
 
+.post-share-buttons {
+    text-align: center;
+    padding: 50px 20px;
+    font-size: 1.9rem;
+}
+
+.post-share-buttons a {
+    color: var(--white);
+}
+
+.post-share-buttons a .fab {
+    cursor: pointer;
+}
+
+.post-share-buttons a:hover {
+    color: var(--white);
+    opacity: 0.7;
+}
+
+.post-share-buttons .fab {
+    padding: 4px;
+    margin: 10px;
+}
+
 .post-full-content .kg-image {
     max-width: 100%;
 }
