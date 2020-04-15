@@ -2151,6 +2151,12 @@ Usage (In Ghost editor):
     border-radius: 12px;
 }
 
+@media (max-width: 1170px) {
+    .post-full-comments {
+        margin: 0 11vw;
+    }
+}
+
 @media (max-width: 800px) {
     .post-full-comments {
         margin: 0 -5vw;
@@ -2383,6 +2389,12 @@ Usage (In Ghost editor):
     font-size: 1.9rem;
 }
 
+@media (max-width: 767px) {
+    .post-share-buttons {
+        padding: 30px 20px;
+    }
+}
+
 .post-share-buttons a {
     color: var(--white);
 }
@@ -2398,7 +2410,7 @@ Usage (In Ghost editor):
 
 .post-share-buttons .fab {
     padding: 4px;
-    margin: 10px;
+    margin: 8px;
 }
 
 .post-full-content .kg-image {
